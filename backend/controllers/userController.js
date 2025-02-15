@@ -105,8 +105,15 @@ const register = async (req, res) => {
     }
 };
 
-// const getUserDetails = async(req,res) => {
+const getUserDetails = async(req,res) => {
+    const phno = req.params.phno;
+    console.log(phno);
+    const user = await User.findOne({phno});
+    if(!user){
+        return res.status(404).json({message:"User not found"});
+    }
+    console.log(user);
+    res.status(200).json({user});
+}
 
-// }
-
-module.exports = { register , userLogin , otpVerification};
+module.exports = { register , userLogin , otpVerification ,getUserDetails};
