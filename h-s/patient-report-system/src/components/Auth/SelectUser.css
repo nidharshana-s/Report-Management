@@ -1,0 +1,68 @@
+/* SelectUser.css */
+.select-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #A1D6E2, #9dd9e6);
+  }
+  
+  .select-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    border: 2px solid #1995AD;
+    animation: slide-in 0.5s ease-in-out;
+  }
+  
+  .select-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #1995AD;
+  }
+  
+  .select-subtitle {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    color: gray;
+  }
+  
+  .button-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .select-btn {
+    padding: 12px;
+    background-color: #1995AD;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .select-btn:hover {
+    background-color: #12627E;
+    transform: translateY(-3px);
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

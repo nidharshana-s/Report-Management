@@ -1,0 +1,38 @@
+.report-list {
+    max-width: 600px;
+    margin: auto;
+    background: #f1f1f2;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .report-list h2 {
+    color: #1995ad;
+  }
+  
+  .report-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .report-list li {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #1995ad;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .report-list a {
+    color: #1995ad;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .report-list a:hover {
+    color: #a1d6e2;
+  }
+  

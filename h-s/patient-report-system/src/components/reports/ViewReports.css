@@ -1,0 +1,48 @@
+.view-reports-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .view-reports-container h2 {
+    color: #1995AD;
+    margin-bottom: 20px;
+  }
+  
+  .report-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .report-list li {
+    background: #A1D6E2;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .report-list li:hover {
+    background: #1995AD;
+    color: white;
+  }
+  
+  .view-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1995AD;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .view-link:hover {
+    background-color: #135e75;
+  }
+  
