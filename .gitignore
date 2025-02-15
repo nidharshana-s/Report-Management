@@ -2,5 +2,4 @@ node_modules/
 gcredentials.json
 frontend
 backend/node_modules
-*.env
 backend/.env
