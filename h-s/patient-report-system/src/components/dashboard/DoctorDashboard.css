@@ -1,0 +1,60 @@
+.doctor-dashboard {
+  max-width: 600px;
+  margin: auto;
+  background: #f1f1f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.doctor-info {
+  background: #1995ad;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.patient-search {
+  margin-bottom: 20px;
+}
+
+.patient-search input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #1995ad;
+  border-radius: 5px;
+}
+
+.patient-search button {
+  background: #1995ad;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.patient-search button:hover {
+  background: #a1d6e2;
+}
+
+.patient-details {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #1995ad;
+}
+
+.patient-details button {
+  margin-top: 10px;
+  background: #1995ad;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.patient-details button:hover {
+  background: #a1d6e2;
+}

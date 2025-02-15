@@ -1,0 +1,37 @@
+.patient-dashboard {
+  max-width: 600px;
+  margin: auto;
+  background: #f1f1f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #1995ad;
+}
+
+.patient-info {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #1995ad;
+  margin-bottom: 20px;
+}
+
+.patient-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background: #1995ad;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #a1d6e2;
+}
