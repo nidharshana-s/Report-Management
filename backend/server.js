@@ -3,12 +3,18 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const fileRoutes = require('./routes/fileRoutes');
 require('dotenv').config(); // Load environment variables
+const { gridFSBucket, initializeGridFS } = require('./gridfs');
+const mongoose = require('mongoose');
 
 
 const app = express();
 
 // Connect to MongoDB
 connectDB();
+
+mongoose.connection.once('open', () => {
+  initializeGridFS();
+});
 
 // Middleware
 app.use(cors());

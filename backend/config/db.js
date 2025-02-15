@@ -4,7 +4,11 @@ require('dotenv').config(); // Load environment variables
 
 const connectDB = async () => {
   try {
-    const uri = process.env.MONGODB_URI
+    console.log("Connecting to MongoDB at:", process.env.MONGODB_URI); // Debugging line
+    const uri = process.env.MONGODB_URI;
+    if (!uri) {
+      throw new Error("MONGODB_URI is missing in .env");
+    }
     await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -15,5 +19,6 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
+
 
 module.exports = connectDB;
